@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        
+        <style>
+            body {
+                margin: 0px auto;
+                text-align: center;
+                height: 100vh;
+                background-color: rgb(28, 30, 31);;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: 60px;
+                font-style: italic;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            .corner {
+                width:60px;
+                height:1px;
+                position:absolute;
+                border-top: 2px solid white;
+            }
+
+            .lt {
+                transform-origin: 0% 50%;
+                transform: rotate(45deg);
+                top: 21px;
+                left: 20px;
+            }
+
+            .rt {
+                transform-origin: 100% 50%;
+                transform: rotate(-45deg);
+                top: 21px;
+                right: 20px;
+            }
+
+            .lb {
+                transform-origin: 0% 50%;
+                transform: rotate(-45deg);
+                bottom: 21px;
+                left: 20px;
+            }
+
+            .rb {
+                transform-origin: 100% 50%;
+                transform: rotate(45deg);
+                bottom: 21px;
+                right: 20px;
+            }
+            
+            .container {
+                text-align: center;
+                width: 100vw;
+                max-width: 650px;
+                height: 100vh;
+                max-height: 720px;
+                margin-left: auto;
+                margin-right: auto;
+                display: table-cell;
+                vertical-align: middle;
+                position: relative;
+                background-color: rgb(28, 30, 31);
+                box-sizing: border-box;
+                border: white solid 1px;
+            }
+            
+            .main-prompt {
+                padding: 0 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .main-prompt span {
+                /*background-color: rgba(61, 75, 72, 0.466);*/
+            }
+
+            span.qt {
+                background-color: transparent;
+                margin-right: -8px;
+                margin-left: -10px;
+                font-weight: 100;
+                font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="corner lt"></div>
+            <div class="corner rt"></div>
+            <div class="corner lb"></div>
+            <div class="corner rb"></div>
+            <div class="main-prompt">
+                <!-- <span class="qt">"</span> -->
+                <span id="prompt">Main prompt <b>text</b> here.</span>
+                <!-- <span class="qt">"</span> -->
+            </div>
+        </div>
+    </body>
+</html>
